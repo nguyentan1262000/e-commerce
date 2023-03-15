@@ -1,6 +1,6 @@
 package com.demo.ecommerce.service;
 
-import com.demo.ecommerce.DTO.ProductDTO;
+import com.demo.ecommerce.entity.Product;
 import com.demo.ecommerce.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -12,28 +12,29 @@ public class ProductServiceIPLM implements ProductService{
     @Autowired
     private ProductRepository repository;
 
+
     @Override
-    public List<ProductDTO> getAllProduct() {
+    public List<Product> getAllProduct() {
         return null;
     }
 
     @Override
-    public void addProduct(ProductDTO product) {
+    public void addProduct(Product product) {
 
     }
 
     @Override
-    public ProductDTO getByID(Integer id_product) {
+    public Product getByID(Integer id_product) {
         return null;
     }
 
     @Override
-    public void deleteProduct(ProductDTO product) {
+    public void deleteProduct(Product product) {
 
     }
 
     @Override
-    public void updateProduct(Integer id, ProductDTO product) {
+    public void updateProduct(Integer id, Product product) {
 
     }
 }

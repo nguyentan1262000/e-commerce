@@ -1,14 +1,16 @@
 package com.demo.ecommerce.service;
 
 
-import com.demo.ecommerce.DTO.BillDTO;
+
+
+import com.demo.ecommerce.entity.Bill;
 
 import java.util.List;
 
 public interface BillService {
-    List<BillDTO> getAllProduct();
-    void addBill(BillDTO bill);
-    BillDTO getById(Integer id);
-    void deleteBill(BillDTO bill);
-    void updateBill(Integer id,BillDTO bill);
+    List<Bill> getAllProduct();
+    void addBill(Bill bill);
+    Bill getById(Integer id);
+    void deleteBill(Bill bill);
+    void updateBill(Integer id,Bill bill);
 }

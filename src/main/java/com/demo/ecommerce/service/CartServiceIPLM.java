@@ -1,6 +1,6 @@
 package com.demo.ecommerce.service;
 
-import com.demo.ecommerce.DTO.ClientCartDTO;
+import com.demo.ecommerce.entity.ClientCart;
 import com.demo.ecommerce.repository.ClientCartRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -11,28 +11,29 @@ import java.util.List;
 public class CartServiceIPLM implements CartService{
     @Autowired
     private ClientCartRepository repository;
+
     @Override
-    public List<ClientCartDTO> getAllCart() {
+    public List<ClientCart> getAllCart() {
         return null;
     }
 
     @Override
-    public void addCart(ClientCartDTO cartDTO) {
+    public void addCart(ClientCart cartDTO) {
 
     }
 
     @Override
-    public ClientCartDTO getByID(Integer id_product) {
+    public ClientCart getByID(Integer id_product) {
         return null;
     }
 
     @Override
-    public void deleteCart(ClientCartDTO cart) {
+    public void deleteCart(ClientCart cart) {
 
     }
 
     @Override
-    public void updateCart(Integer id, ClientCartDTO cart) {
+    public void updateCart(Integer id, ClientCart cart) {
 
     }
 }

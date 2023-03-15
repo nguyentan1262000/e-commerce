@@ -1,15 +1,15 @@
 package com.demo.ecommerce.service;
 
 
-import com.demo.ecommerce.DTO.ClientCartDTO;
-import com.demo.ecommerce.DTO.ProductDTO;
+
+import com.demo.ecommerce.entity.ClientCart;
 
 import java.util.List;
 
 public interface CartService {
-    List<ClientCartDTO> getAllCart();
-    void addCart(ClientCartDTO cartDTO);
-    ClientCartDTO getByID(Integer id_product);
-    void deleteCart(ClientCartDTO cart);
-    void updateCart(Integer id,ClientCartDTO cart);
+    List<ClientCart> getAllCart();
+    void addCart(ClientCart cartDTO);
+    ClientCart getByID(Integer id_product);
+    void deleteCart(ClientCart cart);
+    void updateCart(Integer id,ClientCart cart);
 }
