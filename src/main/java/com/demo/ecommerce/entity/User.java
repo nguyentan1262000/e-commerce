@@ -24,9 +24,17 @@ public class User {
     @JdbcTypeCode(SqlTypes.VARCHAR)
     private String password;
 
-    @Column(name = "type_user", nullable = false, length = 10)
-    @JdbcTypeCode(SqlTypes.INTEGER)
-    private int type_user;
+    @Enumerated
+    @Column(name = "role")
+    private Role role;
+
+    public Role getRole() {
+        return role;
+    }
+
+    public void setRole(Role role) {
+        this.role = role;
+    }
 
     public Integer getId_user() {
         return id_user;
@@ -60,11 +68,4 @@ public class User {
         this.password = password;
     }
 
-    public int getType_user() {
-        return type_user;
-    }
-
-    public void setType_user(int type_user) {
-        this.type_user = type_user;
-    }
 }

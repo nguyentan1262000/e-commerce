@@ -1,4 +1,4 @@
-package com.demo.ecommerce.status;
+package com.demo.ecommerce.config;
 
 public class Config {
     public static final int TYPE_USER_ADMIN = 1;
