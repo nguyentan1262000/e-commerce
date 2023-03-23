@@ -1,4 +1,4 @@
-package com.demo.ecommerce.controller;
+package com.demo.ecommerce.controller.system;
 
 import com.demo.ecommerce.entity.Product;
 import com.demo.ecommerce.service.ProductServiceIPLM;
