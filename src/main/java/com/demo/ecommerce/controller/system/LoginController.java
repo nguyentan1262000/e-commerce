@@ -11,8 +11,4 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
 public class LoginController {
-
-    @Autowired
-    private UserServiceIPLM serviceIPLM;
-
 }
